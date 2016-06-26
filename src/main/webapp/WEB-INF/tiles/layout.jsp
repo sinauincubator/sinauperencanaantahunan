@@ -44,13 +44,13 @@
 	                	<a href="" title="Master" class="current" >Master</a>
 	                    <ul>
 	        		    	<li>
-	                        	<a href="pemohonview.htm" title="Master Pemohon">Master Pemohon</a> 
+	                        	<a href="usulanview.htm" title="Usulan Masyarakat">Usulan Masyarakat</a> 
 	            			</li>
 	            			<li>
-	                        	<a href="#" title="Master Izin">Master Izin</a> 
+	                        	<a href="musrenbangkelurahanview.htm" title="Musrenbang Kelurahan">Musrenbang Kelurahan</a> 
 	            			</li>
 	            			<li>
-	                        	<a href="#" title="Master Profil">Master Profil</a> 
+	                        	<a href="musrenbangdesaview.htm" title="Musrenbang Desa">Musrenbang Desa</a> 
 	            			</li>
 	            			<li class="last">
 	                        	<a href="#" title="Master KBLI">Master KBLI</a> 

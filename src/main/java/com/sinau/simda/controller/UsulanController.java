@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.sinau.simda.common.PerizinanPathMappingConstants;
 
 @Controller
-public class WelcomeController {
+public class UsulanController {
 	
 	protected static Logger logger = Logger.getLogger("controller");
 
-	@RequestMapping(PerizinanPathMappingConstants.WELCOME_REQUEST_MAPPING)
+	@RequestMapping(PerizinanPathMappingConstants.MASTER_USULAN_VIEW_REQUEST_MAPPING)
 	public String redirect()
 	{
-		logger.info("Received request to welcome page");
-		return PerizinanPathMappingConstants.WELCOME_JSP_PAGE;
+		logger.info("Received request to usulan page");
+		return PerizinanPathMappingConstants.MASTER_USULAN_VIEW_JSP_PAGE;
 	}
 }
