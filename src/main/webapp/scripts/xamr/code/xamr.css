@@ -1,0 +1,49 @@
+.jumbotron{
+	#background-color: dodgerblue;
+	color: white;
+	text-align: center;
+	background-image: url('../img/back.jpg');
+	background-size: cover;
+	font-style: italic;
+	font-family: initial;
+	padding-bottom: 7px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.navbar-inverse{
+	background-color: ;
+	border-color: ;
+	margin-bottom: 10px;
+}
+.navbar-inverse .navbar-toggle{
+	border-color: white;
+}
+.navbar-inverse .navbar-brand{
+	color: chartreuse;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	border-color: white;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+	background-color: dodgerblue;
+}
+.navbar-inverse .navbar-nav > li > a{
+	color: dodgerblue; 
+}
+.navbar-inverse .navbar-right > li > a{
+	color: red; 
+}
+.table{
+	margin-bottom: 0;
+}
+.jumbotron > p{
+	margin: 0 0 10px 0;
+}
+.page-header{
+	margin: 20px 0 10px 0;
+}
+.navbar-nav > li > a{
+	padding-right: 5px;
+	padding-left: 5px;
+}

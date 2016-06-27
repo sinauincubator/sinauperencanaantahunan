@@ -6,27 +6,6 @@
 <html>
 <head>
     <title>INTEGRASI | Kab Bekasi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
-    <!-- CSS Libs -->
-    <link rel="stylesheet" type="text/css" href="http://203.130.231.101:8998/public/templates/integrasi/lib/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="http://203.130.231.101:8998/public/templates/integrasi/lib/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://203.130.231.101:8998/public/templates/integrasi/lib/css/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="http://203.130.231.101:8998/public/templates/integrasi/lib/css/bootstrap-switch.min.css">
-    <link rel="stylesheet" type="text/css" href="http://203.130.231.101:8998/public/templates/integrasi/lib/css/checkbox3.min.css">
-    <link rel="stylesheet" type="text/css" href="http://203.130.231.101:8998/public/templates/integrasi/lib/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="http://203.130.231.101:8998/public/templates/integrasi/lib/css/dataTables.bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="http://203.130.231.101:8998/public/templates/integrasi/lib/css/select2.min.css">
-    <!-- CSS App -->
-    <link rel="stylesheet" type="text/css" href="http://203.130.231.101:8998/public/templates/integrasi/css/style.css">
-    <link rel="stylesheet" type="text/css" href="http://203.130.231.101:8998/public/templates/integrasi/css/themes/flat-blue.css">
-    <!-- BEGIN THEME STYLES -->
-	<!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
-	<link href="http://203.130.231.101:8998/public/templates/rkpd_v.4.0/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
-	<link href="http://203.130.231.101:8998/public/templates/rkpd_v.4.0/global/css/plugins.css" rel="stylesheet" type="text/css"/>
-	
 </head><body class="flat-blue">
 			<!-- BEGIN FORM -->
 			<div class="row">

@@ -1,158 +1,145 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %> 
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%> 
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
 <html> 
     <head>       
 		<title><tiles:insertAttribute name="title" ignore="true" /></title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/sinauperencanaantahunan/scripts/xamr/code/b.css" type="text/css">
+        <link rel="stylesheet" href="/sinauperencanaantahunan/scripts/xamr/code/fa.css" type="text/css">
+        <link rel="stylesheet" href="/sinauperencanaantahunan/scripts/xamr/code/a.css" type="text/css">
+        <link rel="stylesheet" href="/sinauperencanaantahunan/scripts/xamr/code/xamr.css" type="text/css">
+        <script src="/sinauperencanaantahunan/scripts/xamr/code/j.js"></script>
+        <script src="/sinauperencanaantahunan/scripts/xamr/code/b.js"></script>
  
-        <link rel="stylesheet" type="text/css" media="all" href="/sinauperencanaantahunan/styles/simplicity/theme.css" /> 
+        <!-- 
+        <link rel="stylesheet" type="text/css" media="all" href="/sinauperencanaantahunan/styles/simplicity/theme.css" />  
  
         <script type="text/javascript" src="/sinauperencanaantahunan/scripts/prototype.js"></script> 
         <script type="text/javascript" src="/sinauperencanaantahunan/scripts/scriptaculous.js"></script> 
         <script type="text/javascript" src="/sinauperencanaantahunan/scripts/global.js"></script>
-        
+        -->
         <script type="text/javascript" src="<c:url value="/resources/dojo/dojo.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/resources/spring/Spring.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/resources/spring/Spring-Dojo.js"/>"></script>
-		<link type="text/css" rel="stylesheet" href="<c:url value="/resources/dijit/themes/tundra/tundra.css"/>" />
+		<!-- <link type="text/css" rel="stylesheet" href="<c:url value="/resources/dijit/themes/tundra/tundra.css"/>" /> -->
+		
+		<link href="/sinauperencanaantahunan/scripts/xamr/code/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+		<link href="/sinauperencanaantahunan/scripts/xamr/code/plugins.css" rel="stylesheet" type="text/css"/>
+	
     </head>
-<body class="tundra">     
+<body>     
 <div id="page"> 
     <div id="header" class="clearfix">         
-		<div id="branding"> 
-	    		<h1><a href="welcome.htm">Aplikasi Perizinan Pemda</a></h1> 
-	    		<p>Melayani perizinan anda dengan mudah, cepat dan transparan.</p>
-		</div> 
+		<div class="container">
+			<div id="jumbotron" onclick="myCode()">
+				<div class="jumbotron">
+						<span class="fa fa-paper-plane fa-2x"></span>
+						<h1>Welcome...</h1>
+						<p>Selamat Datang di Web Integrasi Kab. Bekasi...</p>
+						<p>Pada halaman ini Anda dapat mengelola data 000 dan lainnya...</p>
+				</div>
+			</div>
+		</div>
+		
+		<nav class="navbar navbar-inverse" style="font-size: 13px; font-family: initial;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="welcome.htm" title="Welcome"><span class="fa fa-tachometer"></span> Dashboard</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+					
+						<li><a href="usulanview.htm" title="Usulan Masyarakat"><span class="fa fa-comment-o"></span> Usulan Masyarakat</a></li>
+						
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-tags"></span> Musrenbang <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="musrenbangdesaview.htm" title="Musrenbang Desa"><span class="fa fa-circle-o"> Musrenbang Desa</span></a></li>
+								<li><a href="musrenbangkelurahanview.htm" title="Musrenbang Kelurahan"><span class="fa fa-circle-o"> Musrenbang Kelurahan</span></a></li>
+								<li><a href="musrenbangkecamatanview.htm" title="Musrenbang Kecamatan"><span class="fa fa-circle-o"> Musrenbang kecamatan</span></a></li>
+								<li><a href="musrenbangkabupatenview.htm" title="Musrenbang Kabupaten"><span class="fa fa-circle-o"> Musrenbang Kabupaten</span></a></li>
+							</ul>
+						</li>
+						
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-pencil"></span> Rencana Kerja <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="prarencanakerjaview.htm" title="Pra Rencana Kerja"><span class="fa fa-circle-o"> Pra Rencana Kerja</span></a></li>
+								<li><a href="rencanakerjaview.htm" title="Rencana Kerja"><span class="fa fa-circle-o"> Rencana Kerja</span></a></li>
+							</ul>
+						</li>
+						
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-file-text-o"></span> RKPD <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="rkpdmurniview.htm" title="RKPD Murni"><span class="fa fa-circle-o"> RKPD Murni</span></a></li>
+								<li><a href="rkpdperubahanview.htm" title="RKPD Perubahan"><span class="fa fa-circle-o"> RKPD Perubahan</span></a></li>
+							</ul>
+						</li>	
+						
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-book"></span> KUA & PPAS <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="kuappasmurniview.htm" title="KUA & PPAS Murni"><span class="fa fa-circle-o"> KUA & PPAS Murni</span></a></li>
+								<li><a href="kauppasperubahanview.htm" title="KUA & PPAS Perubahan"><span class="fa fa-circle-o"> KUA & PPAS Perubahan</span></a></li>
+							</ul>
+						</li>	
+						
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-cube"></span> Pra APBD Kabupaten <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="praapbdabupatenmurniview.htm" title="Pra APBD Kabupaten Murni"><span class="fa fa-circle-o"> Pra APBD Kabupaten Murni</span></a></li>
+								<li><a href="praapbdabupatenperubahanview.htm" title="Pra APBD Kabupaten Perubahan"><span class="fa fa-circle-o"> Pra APBD Kabupaten Perubahan</span></a></li>
+							</ul>
+						</li>
+						
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-cube"></span> RKA <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="rkamurnibelanjalangsungview.htm" title="RKA Murni Belanja Langsung"><span class="fa fa-circle-o"> RKA Murni Belanja Langsung</span></a></li>
+							</ul>
+						</li>	
+						
+						<li><a href="laporanview.htm" title="Laporan"><span class="fa fa-bar-chart"></span> Laporan</a></li>
+						<li><a href="controlpanelview.htm" title="Control Panel"><span class="fa fa-cogs"></span> Control Panel</a></li>
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Administrator</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-log-in" data-toggle="modal" data-target="#myModal_login"></span> Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav> 
 		<hr/> 
     </div> 
  
      <div id="content" class="clearfix"> 
      	<div id="main"> 
-        	<tiles:insertAttribute name="body" /> 
+        	<div class="container">
+        	<tiles:insertAttribute name="body" />
+        	</div> 
         </div> 
  
-        <div id="nav"> 
-         	<div class="wrapper"> 
-            	<ul id="primary-nav" class="menuList"> 
-	    			<li class="pad">&nbsp;</li> 
-	                <li> 
-	    	        	<a href="welcome.htm" title="Home" class="current" >Home</a> 
-	    		    </li>	                
-	                <li class="menubar">
-	                	<a href="" title="Master" class="current" >Master</a>
-	                    <ul>
-	        		    	<li>
-	                        	<a href="usulanview.htm" title="Usulan Masyarakat">Usulan Masyarakat</a> 
-	            			</li>
-	            			<li>
-	                        	<a href="musrenbangkelurahanview.htm" title="Musrenbang Kelurahan">Musrenbang Kelurahan</a> 
-	            			</li>
-	            			<li>
-	                        	<a href="musrenbangdesaview.htm" title="Musrenbang Desa">Musrenbang Desa</a> 
-	            			</li>
-	            			<li class="last">
-	                        	<a href="#" title="Master KBLI">Master KBLI</a> 
-	            			</li>
-	            		</ul>
-	                </li>
-	                <li class="menubar">
-	                	<a href="" title="Perizinan" class="current" >Perizinan</a>		            		
-	                    <ul>
-	                    	<li class="menubar">
-			                	<a href="" title="Permohonan Izin">Permohonan Izin</a>		            		
-			                    <ul>
-			        		    	<li>
-		                        		<a href="#" title="Tambah Baru">Tambah Baru</a> 
-			            			</li>
-			            			<li>
-			                        	<a href="#" title="Perpanjang Izin">Perpanjang Izin</a> 
-			            			</li>
-			            			<li>
-			                        	<a href="#" title="Perubahan Izin">Perubahan Izin</a> 
-			            			</li>
-			            			<li class="last">
-			                        	<a href="#" title="Lihat Data Izin">Lihat Data Izin</a> 
-			            			</li>
-			            		</ul>
-	                		</li>	        		    	
-	            			<li class="menubar last">
-			                	<a href="" title="Proses Izin" >Proses Izin</a>		            		
-			                    <ul>
-			        		    	<li>
-		                        		<a href="#" title="Administrasi">Administrasi</a> 
-			            			</li>
-			            			<li>
-			                        	<a href="#" title="Survey">Survey</a> 
-			            			</li>
-			            			<li>
-			                        	<a href="#" title="Kepala Seksi">Kepala Seksi</a> 
-			            			</li>
-			            			<li>
-			                        	<a href="#" title="Kepala Bagian">Kepala Bagian</a> 
-			            			</li>
-			            			<li>
-			                        	<a href="#" title="Kepala Bidang">Kepala Bidang</a> 
-			            			</li>
-			            			<li>
-			                        	<a href="#" title="Sekretariat">Sekretariat</a> 
-			            			</li>
-			            			<li class="last">
-			                        	<a href="#" title="Kepala Badan">Kepala Badan</a> 
-			            			</li>
-			            		</ul>
-	                		</li>	                		
-	            		</ul>
-	                </li>
-	                <li class="menubar">
-			            <a href="" title="Pencetakan" class="current" >Pencetakan</a>
-			            <ul>
-			        		<li class="last"> 
-			                	<a href="#" title="Pencetakan Izin">Pencetakan Izin</a> 
-			            	</li>
-			        	</ul>
-			        </li>
-			        <li class="menubar">
-			            <a href="" title="Laporan" class="current" >Laporan</a>
-			            <ul>
-			        		<li> 
-			                	<a href="#" title="Monitoring">Monitoring</a> 
-			            	</li>
-			            	<li class="last"> 
-			                	<a href="#" title="Summary">Summary</a> 
-			            	</li>
-			        	</ul>
-			        </li>
-			        <li class="menubar">
-			            <a href="" title="Privasi Pengguna" class="current" >Privasi Pengguna</a>
-			            <ul>
-			        		<li> 
-			                	<a href="#" title="Privasi">Privasi</a> 
-			            	</li>
-			            	<li> 
-			                	<a href="#" title="Pengguna">Pengguna</a> 
-			            	</li>
-			            	<li class="last"> 
-			                	<a href="#" title="Profil Saya">Profil Saya</a> 
-			            	</li>
-			        	</ul>
-			        </li>
-	                <li> 
-	                	<a href="#" title="Logout" class="current" >Logout</a> 
-	            	</li> 
-            	</ul> 
-			</div> 
-            <hr/> 
-		</div><!-- end nav --> 
+        
 	</div> 
  
-    <div id="footer" class="clearfix"> 
-         
-    <div id="divider"><div></div></div> 
-    <span class="right">Copyright <b>SinauCyberspace&#8482;</b> Workaround &copy; 2016           
-    </span>            
-        </div> 
+    <div id="footer" class="clearfix">
+    	<div class="container">
+		    <div class="page-header" style="text-align: right;">
+		    	<span class="right">Copyright <b>SinauCyberspace&#8482;</b> Workaround &copy; 2016</span>
+		    </div>            
+	    </div>
+	</div> 
     </div> 
 </body> 
 </html> 
