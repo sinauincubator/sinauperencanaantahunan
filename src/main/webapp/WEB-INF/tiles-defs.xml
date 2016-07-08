@@ -65,5 +65,63 @@
 	<put-attribute name="body" value="/WEB-INF/jsp/musrenbangdesaview.jsp"/>      
   </definition>
   
+  	<definition name="musrembangkecamatanview" extends="baselayout">
+		<put-attribute name="title" value="Musrembang Kecamatan" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/musrembangkecamatanview.jsp" />
+	</definition>
+
+	<definition name="musrembangkecamatanaddbelanjalangsung"
+		extends="baselayout">
+		<put-attribute name="title"
+			value="Musrembang Kecamatan Tambahkan Belanja Langsung" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/musrembangkecamatanaddbelanjalangsung.jsp" />
+	</definition>
+
+	<definition name="musrembangkecamatanaddbelanjatidaklangsung"
+		extends="baselayout">
+		<put-attribute name="title"
+			value="Musrembang Kecamatan Tambahkan Belanja Tidak Langsung" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/musrembangkecamatanaddbelanjatidaklangsung.jsp" />
+	</definition>
+
+	<definition name="prarencanakerjaview" extends="baselayout">
+		<put-attribute name="title" value="Pra Rencana Kerja" />
+		<put-attribute name="body" value="/WEB-INF/jsp/prarencanakerjaview.jsp" />
+	</definition>
+
+	<definition name="prarencanakerjaaddbelanjalangsung" extends="baselayout">
+		<put-attribute name="title"
+			value="Pra Rencana Kerja Tambahkan Belanja Langsung" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/prarencanakerjaaddbelanjalangsung.jsp" />
+	</definition>
+
+	<definition name="prarencanakerjaaddbelanjatidaklangsung"
+		extends="baselayout">
+		<put-attribute name="title"
+			value="Pra Rencana Kerja Tambahkan Belanja Tidak Langsung" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/prarencanakerjaaddbelanjatidaklangsung.jsp" />
+	</definition>
+
+	<definition name="renjamurniview" extends="baselayout">
+		<put-attribute name="title" value="Rencana Kerja Murni" />
+		<put-attribute name="body" value="/WEB-INF/jsp/renjamurniview.jsp" />
+	</definition>
+
+	<definition name="renjaperubahanview" extends="baselayout">
+		<put-attribute name="title" value="Rencana Kerja Perubahan" />
+		<put-attribute name="body" value="/WEB-INF/jsp/renjaperubahanview.jsp" />
+	</definition>
+
+	<definition name="musrembangkabupatenview" extends="baselayout">
+		<put-attribute name="title" value="Musrembang Kabuaten" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/musrembangkabupatenview.jsp" />
+	</definition>
+  
   
 </tiles-definitions>
