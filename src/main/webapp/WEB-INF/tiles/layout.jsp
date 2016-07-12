@@ -65,9 +65,9 @@
 							<ul class="dropdown-menu">
 								<li><a href="musrenbangdesaview.htm" title="Musrenbang Desa"><span class="fa fa-circle-o"> Musrenbang Desa</span></a></li>
 								<li><a href="musrenbangkelurahanview.htm" title="Musrenbang Kelurahan"><span class="fa fa-circle-o"> Musrenbang Kelurahan</span></a></li>
-								<li><a href="musrembangkecamatanview.htm" title="Musrenbang Kecamatan"><span class="fa fa-circle-o"> Musrenbang kecamatan</span></a></li>
+								<li><a href="musrembangkecamatanview.htm" title="Musrenbang Kecamatan"><span class="fa fa-circle-o"> Musrenbang Kecamatan</span></a></li>
 								<li><a href="musrembangkabupatenview.htm" title="Musrenbang Kabupaten"><span class="fa fa-circle-o"> Musrenbang Kabupaten</span></a></li>
-								<li><a href="pemohonview.htm" title="Musrenbang Kabupaten"><span class="fa fa-circle-o"> pemohon</span></a></li>
+								
 							</ul>
 						</li>
 						

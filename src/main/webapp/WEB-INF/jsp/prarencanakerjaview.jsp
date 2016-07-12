@@ -202,10 +202,10 @@
 								</button>
 								<ul class="dropdown-menu" role="menu">
 									<li><a
-										href="http://203.130.231.101:8998/pra-rencana-kerja/belanja-langsung">Belanja
+										href="prarencanakerjaaddbelanjalangsung.htm">Belanja
 											Langsung</a></li>
 									<li><a
-										href="http://203.130.231.101:8998/pra-rencana-kerja/belanja-tidak-langsung">Belanja
+										href="prarencanakerjaaddbelanjatidaklangsung.htm">Belanja
 											Tidak Langsung</a></li>
 								</ul>
 							</div>
